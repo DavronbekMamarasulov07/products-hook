@@ -20,8 +20,8 @@ function ProductCart({ product }) {
 
                 <div className="product_info">
                     <div className="products_price_discount">
-                        <span>${(product.price)}</span>
                         ${(product.price - (product.price * product.discountPercentage) / 100).toFixed(2)}
+                        <span>${(product.price)}</span>
                     </div>
                     <div className="products_rating">
                         {product.rating} / 5 <AiFillStar />
