@@ -1,0 +1,42 @@
+
+.nav{
+    background-color: #ffffff95;
+}
+
+.nav_content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav_search_form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;   
+    background-color: rgb(0,0,0,0.1);
+    max-width: 600px;
+    padding-right: 15px;
+    border-radius: 30px;
+}
+
+.nav_search_form svg{
+    font-size: 24px;
+}
+
+.nav_search_input{
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #030303;
+    font-size: 16px;
+}
+
+.nav_search_form input::placeholder{
+    color: #000;
+}
