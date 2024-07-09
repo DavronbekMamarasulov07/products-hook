@@ -47,7 +47,7 @@ const SingleProductPage = ({ data }) => {
                 </div>
                 <div className="single_product_wrapper">
                     <h3 className="single_product_title">{data.title}</h3>
-                    <p className="single_product_description">{data.description}</p>
+                    <p className="single_product_description">"{data.description}"</p>
                     <div className="single_product_info">
                         <div className="single_products_stock">
                             Stock: <span>{data.stock}</span>
@@ -97,7 +97,8 @@ const SingleProductPage = ({ data }) => {
                     Comments
                     {/* <button onClick={() => setShowReviews(!showReviews)} className="single_product_reviews_btn"><IoIosArrowDropdownCircle /></button> */}
                 </h2>
-                <div className="reviews_content" style={showBtn ? { opacity: "1" } : { opacity: "0" }}>
+                <div className="reviews_content" >
+                {/* style={showBtn ? { opacity: "1" } : { opacity: "0" }} */}
                     {
                         data?.reviews?.map((review) => (
                             <div className="review_card" key={uuidv4()}>
@@ -110,6 +111,7 @@ const SingleProductPage = ({ data }) => {
                                 </span>
                                 <h4 className="review_name">{review.reviewerName}<IoMdCheckmarkCircle /></h4>
                                 <p className="review_comment">{review.comment}</p>
+                                <span className="review_date">{review?.date?.split("T")[0].split("-").reverse().join("-")}</span>
                             </div>
                         ))
                     }
