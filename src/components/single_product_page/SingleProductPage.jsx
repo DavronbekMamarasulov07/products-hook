@@ -94,7 +94,8 @@ const SingleProductPage = ({ data }) => {
             </div>
             <div className="single_product_reviews">
                 <h2 className="single_product_reviews_title">
-                    Comments <button onClick={() => setShowReviews(!showReviews)} className="single_product_reviews_btn"><IoIosArrowDropdownCircle /></button>
+                    Comments
+                    {/* <button onClick={() => setShowReviews(!showReviews)} className="single_product_reviews_btn"><IoIosArrowDropdownCircle /></button> */}
                 </h2>
                 <div className="reviews_content" style={showBtn ? { opacity: "1" } : { opacity: "0" }}>
                     {
