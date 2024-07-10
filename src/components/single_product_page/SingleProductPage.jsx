@@ -14,7 +14,7 @@ const SingleProductPage = ({ data }) => {
     const navigate = useNavigate();
     const [count, setCount] = useState(1);
     const [showBtn, setShowBtn] = useState(false)
-    const [showReviews, setShowReviews] = useState(false)
+    // const [showReviews, setShowReviews] = useState(false)
 
     const handleShowBtn = () => {
         setShowBtn(true)

@@ -1,0 +1,38 @@
+.contentStyle {
+    height: 160px;
+    line-height: 160px;
+    text-align: center;
+    background: #364d79;
+    color: #fff;
+    font-size: 20px;
+}
+
+.hero {
+    height: 500px; 
+    width: 1300px;   
+    /* width: 1400px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+        border-radius: 20px;
+        overflow: hidden;
+
+  }
+
+.carusel{
+  height: 500px; 
+  width: 1300px;   
+  background-color: red;
+}
+
+.carusel_item{
+    object-fit: cover;
+    height: 500px;
+}
+
+.carusel_item img{
+  width: 1300px;
+  max-width: 1300px;
+  background-color: yellow;
+}
+
