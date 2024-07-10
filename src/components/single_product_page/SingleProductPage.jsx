@@ -65,8 +65,8 @@ const SingleProductPage = ({ data }) => {
                     <div className="single_product_btn_content">
                         <div className="single_btn_items">
                             <div className="single_products_price_discount">
-                                ${((data.price - (data.price * data.discountPercentage) / 100).toFixed(2) * count).toFixed(2)}
-                                <span>${((data.price * count).toFixed(2))}</span>
+                                ${((data?.price - (data?.price * data?.discountPercentage) / 100).toFixed(2) * count).toFixed(2)}
+                                <span>${((data?.price * count).toFixed(2))}</span>
                             </div>
                             <div className="price_box">
                                 <button className="single_product_btn_count" onClick={handleIncrement}>
