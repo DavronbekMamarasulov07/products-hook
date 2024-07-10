@@ -8,8 +8,8 @@ import { MdOutlineVerticalAlignTop } from "react-icons/md";
 import ProductCart from "../product-cart/ProductCart";
 
 
-const Main = () => {
-  const [data, loading] = useFetch("/products")
+const Main = ({data,loading}) => {
+  
   const [step, setStep] = useState(3)
   
 
