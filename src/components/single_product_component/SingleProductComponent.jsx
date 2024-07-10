@@ -1,14 +1,14 @@
-import { IoIosArrowDropdownCircle } from "react-icons/io"; 
 import { IoMdCheckmarkCircle } from "react-icons/io"; 
 import { BsBasket } from "react-icons/bs";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-import './SingleProductPage.css'
 import Container from "../container/Container"
 import { AiFillStar } from 'react-icons/ai'
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
+import './SingleProductComponent.css'
+
 
 const SingleProductPage = ({ data }) => {
     const navigate = useNavigate();

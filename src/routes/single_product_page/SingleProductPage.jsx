@@ -2,16 +2,21 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useFetch } from '../../hooks/useFetch'
 import { Skeleton } from 'antd'
-import SingleProductPage from '../../components/single_product_page/SingleProductPage'
+import SingleProductComponent from '../../components/single_product_component/SingleProductComponent'
 import Container from '../../components/container/Container'
+import SingleNav from '../../components/single_nav/SingleNav'
 
 
 const SingleProduct = () => {
   const element = useParams()
-  const [data, loading] = useFetch(`/products/${element.productId}`)
+  const [data, loading] = useFetch(`/products/${element.productId}`, true)
+  console.log(data)
 
 
   return (
+
+   <>
+   <SingleNav/>
     <Container>
       <div className='single_product'>
         {
@@ -33,12 +38,13 @@ const SingleProduct = () => {
             :
 
 
-            <SingleProductPage data={data} />
+            <SingleProductComponent data={data} />
 
 
         }
       </div>
     </Container>
+   </>
   )
 }
 

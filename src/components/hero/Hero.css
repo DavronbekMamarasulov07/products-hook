@@ -20,14 +20,14 @@
   }
 
 .carusel{
-  height: 500px; 
   width: 1300px;   
   background-color: red;
 }
 
 .carusel_item{
     object-fit: cover;
-    height: 500px;
+    display: flex;
+    max-width: 1200px;
 }
 
 .carusel_item img{
