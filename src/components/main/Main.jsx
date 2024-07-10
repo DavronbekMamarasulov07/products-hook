@@ -1,6 +1,5 @@
 
 import "./Main.css"
-import { useFetch } from "../../hooks/useFetch"
 import { Skeleton } from "antd"
 import Container from "../container/Container"
 import { useState } from "react";

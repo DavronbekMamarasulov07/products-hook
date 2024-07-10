@@ -1,8 +1,6 @@
 import { BiSearchAlt } from "react-icons/bi"; 
-import React, { useState } from 'react'
 import Container from '../container/Container'
 import './Nav.css'
-import { useFetch } from "../../hooks/useFetch";
 
 const Nav = ({search, setSearch}) => {
   
