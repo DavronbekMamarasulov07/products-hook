@@ -1,22 +1,10 @@
 
-// import { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
 
 
 function ProductCart({ product }) {
-    // const [count, setCount] = useState(1)
-
-
-
-    // const handleCountCart = () => {
-    //     setCount(count + 1)
-    // }
-
-    const handleToCart = () => {
-       toast.success("Product added to cart")
-    }
+    
 
 
     return (
@@ -45,7 +33,9 @@ function ProductCart({ product }) {
                 </div>
 
             </div>
-            <button onClick={handleToCart} className="product_add_to_cart">Add to cart</button>
+            <Link   to={`/single-product/${product.id}`} style={{width: "100%", display: "flex", justifyContent: "center"}}>
+                <button  className="product_add_to_cart">Product Details</button>
+            </Link>
         </div>
     )
 }
