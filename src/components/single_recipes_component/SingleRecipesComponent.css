@@ -1,0 +1,116 @@
+.recipes_page_content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.recipes_content_wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;  
+}
+
+.single_recipes_title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-block:0px 40px;
+}
+
+.recipes_content_desciption{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;  
+}
+
+.recipes_content_info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recipes_content_image_box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    overflow: hidden;
+    min-height: 550px;
+}
+
+.recipes_content_image_box img{
+    width: 550px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipes_content_desc_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;  
+    max-width: 350px;
+}
+
+
+.recipes_content_title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipes_content_desc{
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recipes_content_desc strong{
+    color: rgb(19, 19, 19); 
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.recipes_content_rating{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 149, 0);
+}
+
+.recipes_content_rating span{
+    color: rgb(0, 0, 0);    
+    font-size: 12px;
+}
+
+.recipes_content_btn_wrapper{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.recipes_content_btn_wrapper p {
+    font-size: 20px;
+    font-weight: 500;
+    color: blue;
+    text-transform: capitalize;
+    text-decoration:underline;
+}

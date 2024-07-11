@@ -4,8 +4,10 @@ import { BiSearchAlt } from "react-icons/bi";
 import Container from '../container/Container'
 import logo from '../../images/logo.png'
 import './Nav.css'
+import { useState } from "react";
 
 const Nav = ({search, setSearch}) => {
+  const [count , setCount] = useState(0)
   
   return (
     <nav className="nav">

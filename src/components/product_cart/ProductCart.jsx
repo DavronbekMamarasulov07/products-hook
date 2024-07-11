@@ -1,9 +1,22 @@
 
+// import { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 
 function ProductCart({ product }) {
+    // const [count, setCount] = useState(1)
+
+
+
+    // const handleCountCart = () => {
+    //     setCount(count + 1)
+    // }
+
+    const handleToCart = () => {
+       toast.success("Product added to cart")
+    }
 
 
     return (
@@ -19,16 +32,20 @@ function ProductCart({ product }) {
                 <p className="product_description">{product.description}</p>
 
                 <div className="product_info">
+                    <div className="products_rating">
+                        {
+                            Array.from({ length: product.rating }).map((_, index) => <AiFillStar key={index} />)
+                        }
+                        <span>({product.rating}/5)</span>
+                    </div>
                     <div className="products_price_discount">
                         ${(product.price - (product.price * product.discountPercentage) / 100).toFixed(2)}
                         <span>${(product.price)}</span>
                     </div>
-                    <div className="products_rating">
-                        {product.rating} / 5 <AiFillStar />
-                    </div>
                 </div>
 
             </div>
+            <button onClick={handleToCart} className="product_add_to_cart">Add to cart</button>
         </div>
     )
 }

@@ -10,7 +10,6 @@ import SingleNav from '../../components/single_nav/SingleNav'
 const SingleProduct = () => {
   const element = useParams()
   const [data, loading] = useFetch(`/products/${element.productId}`, true)
-  console.log(data)
 
 
   return (
